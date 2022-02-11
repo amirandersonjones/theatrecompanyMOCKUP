@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+   
+  }
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+}
+
+.Nav-Bar{
+background-color: black;
+margin: 0;
+padding: 0;
+display: flex;
+}
+
+
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display:inline-block
+    
+  
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color: rgba(190, 6, 6, 0.5)
+}
+
+
+  
+
+.Featured_Shows{
+    max-width: 100%;
+    height:100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.container{
+    display: flex;
+}
+
+
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.1fr 1.7fr;
+    gap: 1em 1em;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Nav-Bar Nav-Bar Nav-Bar"
+      "Featured_Shows Featured_Shows Featured_Shows"
+      "Raisin_Sun Raisin_Sun Raisin_Sun";
+  }
+  
+  .Nav-Bar { grid-area: Nav-Bar; }
+  
+  .Featured_Shows { grid-area: Featured_Shows; }
+  
+  .Raisin_Sun { grid-area: Raisin_Sun; }
+  
